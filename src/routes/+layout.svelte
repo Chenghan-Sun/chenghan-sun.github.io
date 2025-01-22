@@ -5,7 +5,7 @@
 <header class="header">
   <!-- Profile Section -->
   <div class="profile-container">
-    <img src="/profile.jpg" alt="Chenghan Sun" class="profile-photo" />
+    <img src="profile.jpg" alt="Chenghan Sun" class="profile-photo" />
     <div class="contact-info">
       <p>
         <strong>Emails:</strong> <a href="mailto:sunchenghan1995@gmail.com">sunchenghan1995@gmail.com</a>
