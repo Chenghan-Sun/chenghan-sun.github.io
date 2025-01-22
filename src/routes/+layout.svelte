@@ -27,12 +27,13 @@
     <p>
       I am currently affiliated with the Machine Learning group of <a href="https://www.icredd.hokudai.ac.jp/" target="_blank">WPI-ICReDD</a>@Hokkaido University, 
       led by <a href="https://itakigawa.github.io/" target="_blank">Prof. Ichigaku Takigawa</a>. My research broadly focuses on 
-      AI-for-Science (AI4S), with a particular emphasis on developing scalable Geometric Deep Learning (GDL) models guided by physical 
+      AI-for-Science and Graph-based Molecular Representation Learning, with a particular emphasis on developing scalable Geometric Deep Learning models guided by physical 
       principles for tasks such as atomic property prediction and modeling complex dynamics.
     </p>
     <p>
-      I hold a Ph.D. in Chemical Engineering (Computational and AI4S research track) and concurrently obtained an M.S. in 
-      Statistics (Data Science track), both from the University of California, Davis.
+      I hold a Ph.D. in Chemical Engineering (Computational Science research track) and concurrently obtained an M.S. in 
+      Statistics (Data Science track), both from the University of California, Davis. I earned a B.S. from Iowa State University with 
+      Magna Cum Laude academic honor.
     </p>
     <div class="social-links">
       <a href="https://scholar.google.com/citations?user=wf2_0iMAAAAJ&hl=en" target="_blank">🎓 Scholar</a>

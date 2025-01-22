@@ -10,7 +10,7 @@ Chemical Property Predictions" was presented at <a href="https://ibisml.org/ibis
         <span class="date">July 31, 2024</span> – Happy to announce that my proposal for KAKENHI FY2024 (Research Activity Start-up) has been issued by the Japan Society for Promotion of Science (JSPS).
       </li>
       <li>
-        <span class="date">April 1, 2024</span> – After nearly 10 years stay in the US (under DEI), I officially relocated to Japan and serve as Information Science researcher.
+        <span class="date">April 1, 2024</span> – After nearly 10 years in the U.S. (mostly under the chaos of DEI), I officially relocated to Japan and serve as an Information Science researcher.
       </li>
       <li>
         <span class="date">December 5, 2023</span> – The last dance@UC Davis: I finished the Ph.D. Exit Seminar titled "Applications of Machine Learning for Atomistic Modeling in Catalysis Informatics".

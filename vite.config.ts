@@ -1,11 +1,8 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
 
-const config = {
-    plugins: [sveltekit()],
-    build: {
-        target: 'esnext',
-    }
-};
-
-export default config;
+export default defineConfig({
+  plugins: [sveltekit()],
+  base: '/chenghan-sun.github.io/' // Add your repository name here
+});
 
