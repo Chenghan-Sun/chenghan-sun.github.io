@@ -2,7 +2,7 @@ import { s as safe_equals, e as equals, g as get_descriptor, i as index_of, d as
 import { H as HYDRATION_ERROR, a as HYDRATION_START, b as HYDRATION_END, r as render, p as push$1, s as setContext, c as pop$1 } from "./index.js";
 import "clsx";
 const BROWSER = false;
-let base = "/chenghan-sun.github.io";
+let base = "";
 let assets = base;
 const initial = { base, assets };
 function override(paths) {
@@ -1524,7 +1524,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1fke2cz"
+  version_hash: "1d030qi"
 };
 async function get_hooks() {
   let handle;
