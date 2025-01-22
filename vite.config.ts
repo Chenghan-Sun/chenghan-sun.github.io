@@ -3,6 +3,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [sveltekit()],
-  base: '/chenghan-sun.github.io/' // Add your repository name here
+  base: '/' // Set base to '/' for user pages
 });
-
