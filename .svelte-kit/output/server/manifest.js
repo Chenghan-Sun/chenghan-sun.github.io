@@ -6,11 +6,11 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "_app",
+	appPath: "chenghan-sun.github.io/_app",
 	assets: new Set([".DS_Store","Chenghan_Resume_0229_2024.pdf","hea_paper.jpg","meta_logo.jpg","profile-backup.jpg","profile.jpg","showcase-image.jpg","zeo_paper.jpg"]),
 	mimeTypes: {".pdf":"application/pdf",".jpg":"image/jpeg"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.BkL4UK3V.js","app":"_app/immutable/entry/app.BdQkAj5u.js","imports":["_app/immutable/entry/start.BkL4UK3V.js","_app/immutable/chunks/VWO1YMfi.js","_app/immutable/chunks/CgUMMAVu.js","_app/immutable/chunks/BUhcTARo.js","_app/immutable/entry/app.BdQkAj5u.js","_app/immutable/chunks/CgUMMAVu.js","_app/immutable/chunks/CXC37luV.js","_app/immutable/chunks/DvqbIhBD.js","_app/immutable/chunks/C0DAMcJO.js","_app/immutable/chunks/BUhcTARo.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.mr4nh8nP.js","app":"_app/immutable/entry/app.DwDmJblB.js","imports":["_app/immutable/entry/start.mr4nh8nP.js","_app/immutable/chunks/DcMDC1Lg.js","_app/immutable/chunks/GIWjD8-0.js","_app/immutable/chunks/BamRUcG8.js","_app/immutable/entry/app.DwDmJblB.js","_app/immutable/chunks/GIWjD8-0.js","_app/immutable/chunks/C5hOpVsC.js","_app/immutable/chunks/B0qNPHJb.js","_app/immutable/chunks/CloaUUEr.js","_app/immutable/chunks/BamRUcG8.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

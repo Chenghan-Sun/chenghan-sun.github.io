@@ -2,7 +2,7 @@ import { s as safe_equals, e as equals, g as get_descriptor, i as index_of, d as
 import { H as HYDRATION_ERROR, a as HYDRATION_START, b as HYDRATION_END, r as render, p as push$1, s as setContext, c as pop$1 } from "./index.js";
 import "clsx";
 const BROWSER = false;
-let base = "";
+let base = "/chenghan-sun.github.io";
 let assets = base;
 const initial = { base, assets };
 function override(paths) {
@@ -87,7 +87,7 @@ function mutable_source(initial_value, immutable = false) {
   return s;
 }
 function set(source2, value) {
-  if (active_reaction !== null && is_runes() && (active_reaction.f & (DERIVED | BLOCK_EFFECT)) !== 0 && // If the source was created locally within the current derived, then
+  if (active_reaction !== null && !untracking && is_runes() && (active_reaction.f & (DERIVED | BLOCK_EFFECT)) !== 0 && // If the source was created locally within the current derived, then
   // we allow the mutation.
   (derived_sources === null || !derived_sources.includes(source2))) {
     state_unsafe_mutation();
@@ -471,6 +471,7 @@ let queued_root_effects = [];
 let flush_count = 0;
 let dev_effect_stack = [];
 let active_reaction = null;
+let untracking = false;
 function set_active_reaction(reaction) {
   active_reaction = reaction;
 }
@@ -612,6 +613,7 @@ function update_reaction(reaction) {
   var previous_skip_reaction = skip_reaction;
   var prev_derived_sources = derived_sources;
   var previous_component_context = component_context;
+  var previous_untracking = untracking;
   var flags = reaction.f;
   new_deps = /** @type {null | Value[]} */
   null;
@@ -621,6 +623,7 @@ function update_reaction(reaction) {
   skip_reaction = !is_flushing_effect && (flags & UNOWNED) !== 0;
   derived_sources = null;
   component_context = reaction.ctx;
+  untracking = false;
   read_version++;
   try {
     var result = (
@@ -670,6 +673,7 @@ function update_reaction(reaction) {
     skip_reaction = previous_skip_reaction;
     derived_sources = prev_derived_sources;
     component_context = previous_component_context;
+    untracking = previous_untracking;
   }
 }
 function remove_reaction(signal, dependency) {
@@ -922,7 +926,7 @@ function get(signal) {
     );
     return value;
   }
-  if (active_reaction !== null) {
+  if (active_reaction !== null && !untracking) {
     if (derived_sources !== null && derived_sources.includes(signal)) {
       state_unsafe_local_read();
     }
@@ -1520,7 +1524,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "11d5vmj"
+  version_hash: "1fke2cz"
 };
 async function get_hooks() {
   let handle;

@@ -1,19 +1,21 @@
 import adapter from '@sveltejs/adapter-static';
-import {
-    vitePreprocess
-} from '@sveltejs/kit/vite';
+import sveltePreprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    preprocess: vitePreprocess(),
+    preprocess: sveltePreprocess(),
 
     kit: {
-        adapter: adapter(),
+        adapter: adapter({
+            strict: false, // Ignore dynamic routes
+        }),
         paths: {
-            base: process.env.NODE_ENV === 'production' ? '/chenghan-sun' : '',
-        }
-    }
+            base: process.env.NODE_ENV === 'production' ? '/chenghan-sun.github.io' : '',
+        },
+        prerender: {
+            entries: ['*'], // Ensure all pages are prerendered
+        },
+    },
 };
 
 export default config;
-
