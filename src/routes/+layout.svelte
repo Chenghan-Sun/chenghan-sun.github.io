@@ -113,9 +113,17 @@
   }
 
   .intro p {
-    text-align: justify;
+    text-align: justify; /* Default for web */
     margin-bottom: 1rem;
-    line-height: 1.6; /* Improves readability */
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 768px) {
+    .intro p {
+      text-align: middle; /* Align text to the left on mobile */
+      line-height: 1.4; /* Slightly reduce line-height for compactness */
+      margin-bottom: 1rem;
+    }
   }
 
   .social-links a {
@@ -127,6 +135,55 @@
 
   .social-links a:hover {
     text-decoration: underline;
+  }
+
+  /* --- Mobile-Specific Styles --- */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack the sections vertically */
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .profile-photo {
+      width: 150px; /* Smaller photo for mobile */
+      height: 150px;
+    }
+
+    .contact-info {
+      font-size: 0.8rem; /* Smaller font for mobile */
+    }
+
+    .quote {
+      font-size: 0.9rem; /* Adjust quote font size */
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .intro {
+      max-width: 100%; /* Full width for mobile */
+      padding: 0 1rem;
+      text-align: justify; /* Ensure justified text */
+    }
+
+    .intro h1 {
+      font-size: 1.8rem; /* Slightly smaller for mobile */
+    }
+
+    .intro p {
+      font-size: 0.9rem; /* Adjust text size */
+      line-height: 1.4; /* Tighter line spacing */
+    }
+
+    .social-links {
+      text-align: center; /* Center social links on mobile */
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      display: block; /* Stack social links vertically */
+      margin: 0.5rem 0;
+    }
   }
 </style>
 

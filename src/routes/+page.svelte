@@ -227,6 +227,31 @@ Chemical Property Predictions" was presented at <a href="https://ibisml.org/ibis
     line-height: 1.2; /* Tighter spacing for abstract */
   }
 
+  @media screen and (max-width: 768px) {
+    .publication {
+      flex-direction: column; /* Stack image on top of the text */
+      align-items: center; /* Center align items for a balanced layout */
+    }
+
+    .publication .paper-image {
+      max-width: 90%; /* Restrict image width on mobile for better scaling */
+      margin-bottom: 1rem; /* Add spacing below the image */
+    }
+
+    .paper-details {
+      text-align: center; /* Center-align the text for consistency */
+      margin-top: 0; /* Remove top margin to avoid excess spacing */
+    }
+
+    .paper-details .title {
+      font-size: 1rem; /* Adjust title font size for smaller screens */
+    }
+
+    .paper-details .abstract {
+      font-size: 0.9rem; /* Slightly smaller abstract font for mobile */
+    }
+  }
+
   /* Experience Section Styles */
   #experience {
     margin: 2rem 0;

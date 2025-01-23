@@ -15,3 +15,30 @@ html {
     scroll-behavior: smooth;
   }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjust container or layout */
+    .container {
+      padding: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    /* Image adjustments for responsiveness */
+    img {
+      width: 100%; /* Full width for smaller screens */
+      max-width: 300px; /* Optional: limit maximum size */
+      margin: 0 auto; /* Center the image */
+      display: block;
+    }
+  
+    /* Paragraph adjustments for readability */
+    p {
+      line-height: 1.4; /* Better spacing for mobile screens */
+    }
+  
+    /* Optional: Adjust heading size */
+    h1 {
+      font-size: 1.5rem; /* Reduce heading size for mobile */
+    }
+  }
