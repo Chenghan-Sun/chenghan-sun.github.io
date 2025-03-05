@@ -24,7 +24,7 @@
   <div class="intro">
     <h1>Chenghan Sun</h1>
     <!-- Added Quote -->
-    <p class="quote"><em>「我々は人種で判断されない、実力主義の社会を築く。」-- ドナルド・トランプ</em></p>
+    <p class="quote"><em> 我々は人種で判断されない、実力主義の社会を築く。</em></p>
     <p>
       I am currently affiliated with the Machine Learning group of <a href="https://www.icredd.hokudai.ac.jp/" target="_blank">WPI-ICReDD</a>@Hokkaido University, 
       led by <a href="https://itakigawa.github.io/" target="_blank">Prof. Ichigaku Takigawa</a>. My research broadly focuses on 
